@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap%27');
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}   
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+img{
+    min-width: 100%;
+}
+/* utilities */
+@media (min-with: 768px){
+    main{
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+/* nav menu */
+nav.menu{
+    display: flex;
+    justify-content: space-between; /*horizontally*/
+    align-items: center; /*vertically*/ 
+    background-color: white;
+    height: 35px;
+    padding: 8px 17px 6px 17px;
+}
+nav.menu a{
+    color: black;
+    margin-right: 8px;
+}
+.logo-frame{
+    height: 32px;
+}
+.logo-complete{
+    display: none;
+}
+.link-login{
+
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 1000;
+}
+.link-search{
+    display: none;
+}
+.link-news{
+    display: none;
+}
+a.link-subs{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 1000;
+
+    color: white!important;
+    background-color: black;
+    padding: 20px 18px 14px 18px;
+    background: linear-gradient(to left, black 50%, rgb(255,206,00) 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+    
+}
+.link-subs:hover{
+    background-color: rgb(255,206,00);
+    background-position: left;
+    color: black!important;
+
+}
+.link-menu{
+    display: none;
+}
+.linnk-arrows{
+    
+}
+/*header*/
+header{
+    height: 152px;
+    text-align: center;
+    padding: 50px 10px;
+
+}
+h1{
+    font-size: 43px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 730;
+}
+.h1text{
+    padding: 17px ;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.subscribe{
+    color: white;
+    border-bottom:2px solid rgb(255,206,00)  ;
+    background: linear-gradient(to bottom, black 50%, rgb(255,206,00) 50%) top;
+    background-size: 100% 200%;
+    transition: .2s ease-out;
+}
+.subscribe:hover{
+    background-color: rgb(255,206,00);
+    background-position: bottom;
+    color: black!important;
+}
+.line{
+color:  rgb(255,206,00);
+font-size: 60px;
+margin-top: -50px;
+
+}
+/* news */
+@media (min-with: 768px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+}
+/* secondary-news */
+@media (min-width: 768px) {
+    .secondary-news-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+main{
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+}
+.main-news{
+position: relative; /*parent */
+}
+.main-news-img{
+
+}
+.main-news-text{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+.main-news-text h2{
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.main-news-text p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.main-news-text a{
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.secondary-news{
+margin: 20px 0;
+}
+.secondary-news-img{
+width: 100%;
+
+}
+.secondary-news-text{
+    background-color: white;
+    margin-top: -3px;
+    padding: 30px;
+
+}
+.secondary-news-text h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: gray;
+
+}
+.secondary-news-text p{
+    color: black;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 12px 0;
+
+}
+.secondary-news-text a{
+    color: black;
+    text-transform: uppercase ;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+/* Today picks */
+@media (min-width: 760px){
+    .todays-pick{
+        height: 150px;
+        width: 150px;
+    }
+}
+.todays-pick{
+    display: flex;
+}
+.todays-pick img{
+    min-width: 90px;
+    height: 90px;
+    margin-right: 30px;
+}
+.todays-pick-text h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.todays-pick-text p{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
